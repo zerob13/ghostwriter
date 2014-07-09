@@ -191,6 +191,11 @@ table {
     .site-title a:hover {
       background: #303030; }
 
+.site-logo {
+  display: block; }
+  .site-logo img {
+    margin: 0; }
+
 .site-nav {
   list-style: none;
   margin: 28px 0 10px; }
@@ -219,11 +224,16 @@ table {
   text-align: center;
   text-transform: uppercase; }
 
-.post-title {
+.post-title,
+.page-title {
   font-size: 52px;
   font-weight: 700;
   margin: 15px 0;
+  text-align: center;
   text-transform: uppercase; }
+
+.page-title {
+  margin: 15px 40px; }
 
 .post-date,
 .blog-description {
@@ -260,6 +270,8 @@ table {
 .post-tags {
   float: left;
   margin: 3px 0 0; }
+  .post-tags a:hover {
+    color: #303030; }
 
 .share {
   float: right; }

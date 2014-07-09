@@ -1,14 +1,8 @@
 {{!< default}}
 
-<div id="latest-post" class="container">
-    {{#foreach posts}}
-        {{#if @first}}
-            {{> post-content}}
-        {{/if}}
-    {{/foreach}}
-</div>
+<div class="container">
+    <h1 class="page-title">Posts tagged: {{tag.name}}</h1>
 
-<div id="post-index" class="container">
     <ol class="post-list">
         {{#foreach posts}}
             <li class="post-stub {{post_class}}" >

@@ -219,6 +219,11 @@ table {
         &:hover { background: $secondary; }
     }
 }
+.site-logo {
+    display: block;
+
+    img { margin: 0; }
+}
 
 .site-nav {
     list-style: none;
@@ -250,12 +255,16 @@ table {
     text-transform: uppercase;
 }
 
-.post-title {
+.post-title,
+.page-title {
     font-size: 52px;
     font-weight: 700;
     margin: 15px 0;
+    text-align: center;
     text-transform: uppercase;
 }
+
+.page-title { margin: 15px 40px; }
 
 .post-date,
 .blog-description {
@@ -296,6 +305,7 @@ table {
 .post-tags {
     float: left;
     margin: 3px 0 0;
+    a:hover { color: $secondary; }
 }
 
 .share {
